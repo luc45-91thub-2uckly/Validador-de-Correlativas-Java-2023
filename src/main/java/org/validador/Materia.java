@@ -30,7 +30,12 @@ public class Materia {
         this.nombre = nombre;
         this.correlativas = correlativas;
     }
-    public static boolean puedeCursar(Alumno alumno){
+    public boolean puedeCursar(Alumno alumno){
         return false;
+    }
+
+    @Override
+    public String toString() {
+        return "Materia:" + nombre +  " - correlativas: " + correlativas;
     }
 }

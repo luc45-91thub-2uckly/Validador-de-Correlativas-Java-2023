@@ -39,4 +39,9 @@ public class Alumno {
     public void setMateriasAprobadas(List<Materia> materiasAprobadas) {
         this.materiasAprobadas = materiasAprobadas;
     }
+
+    @Override
+    public String toString() {
+        return "Alumno:" + nombre + " - Legajo: " + legajo + " - Materias Aprobadas: " + materiasAprobadas;
+    }
 }
